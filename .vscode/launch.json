@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run TypeScript File",
+      "runtimeExecutable": "ts-node",
+      "program": "${workspaceFolder}/${file}",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      // "args": [
+      //   "-r",
+      //   "tsconfig-paths/register",
+      //   "${file}"
+      // ],
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    }
+  ]
+}
